@@ -1,11 +1,24 @@
+.header {
+  background-color: #0d6adb;
+  color: #fff;
+  height: 80px;
+}
+
 .header-logo {
     float: left;
-    font-size: 36px;
-    padding: 20px 40px;
+    font-size: 40px;
+    padding: 10px 30px;
   }
   
   
   .main {
-    padding: 100px 80px;
+    background-color: lightcyan;
+    padding: 70px 50px;
+    height :400px;
+  }
+
+  .footer{
+    padding: 50px 50px;
+    background-color: lightcyan;
   }
   
