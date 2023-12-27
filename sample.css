@@ -1,24 +1,25 @@
 .header {
   background-color: #0d6adb;
   color: #fff;
-  height: 200px;
+  height: 80px;
 }
 
 .header-logo {
     float: left;
     font-size: 40px;
-    height :150px;
+    padding: 10px 30px;
   }
   
   
   .main {
     background-color: lightcyan;
+    padding: 70px 50px;
     height :500px;
   }
 
   .footer{
+    padding: 50px 50px;
     background-color: lightcyan;
-    height :250px;
   }
 
   @media all and (max-width: 480px) {
