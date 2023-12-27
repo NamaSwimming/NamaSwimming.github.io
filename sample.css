@@ -30,14 +30,15 @@
 
     .header {
       background-color: #0d6adb;
-      color: hsl(0, 0%, 100%);
+      color: black;
       height: 100%;
-      width :100%;
+      width :128%;
     }
     
     .header-logo {
-        float: left;
+        float: none;
         height :100%;
+      font-size :100%;
         width: 100%;
       }
       
@@ -45,6 +46,7 @@
       .main {
         background-color: lightcyan;
         height :100%;
+        font-size :80%;
         width: 100%;
       }
     
