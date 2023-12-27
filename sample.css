@@ -7,18 +7,56 @@
 .header-logo {
     float: left;
     font-size: 40px;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    height :100px;
   }
   
   
   .main {
     background-color: lightcyan;
+    font-size :15px;
     padding: 70px 50px;
-    height :400px;
+    height :250px;
   }
 
   .footer{
-    padding: 50px 50px;
+    padding: 30px 30px;
     background-color: lightcyan;
   }
-  
+
+  @media all and (max-width: 480px) {
+    body {
+      -webkit-text-size-adjust: 100%;
+      }
+
+    .header {
+      background-color: #0d6adb;
+      color: hsl(0, 0%, 100%);
+      font-size :15%;
+      height: 30%;
+    }
+    
+    .header-logo {
+        float: left;
+        font-size: 20%;
+        padding: 2% 2%;
+        height :30%;
+        width: 100%;
+      }
+      
+      
+      .main {
+        background-color: lightcyan;
+        padding: 2% 2%;
+        height :50%;
+        width: 100%;
+      }
+    
+      .footer{
+        padding: 5px 5px;
+        background-color: lightcyan;
+        font-size :7%;
+        height :20%;
+        width: 100%;
+      }
+  }
