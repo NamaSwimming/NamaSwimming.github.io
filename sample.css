@@ -7,21 +7,19 @@
 .header-logo {
     float: left;
     font-size: 40px;
-    padding: 10px 20px;
-    height :100px;
+    height :150px;
   }
   
   
   .main {
     background-color: lightcyan;
     font-size :15px;
-    padding: 70px 50px;
-    height :250px;
+    height :450px;
   }
 
   .footer{
-    padding: 30px 30px;
     background-color: lightcyan;
+    height :100px;
   }
 
   @media all and (max-width: 480px) {
@@ -39,21 +37,18 @@
     .header-logo {
         float: left;
         font-size: 30%;
-        padding: 2% 2%;
-        height :30%;
+        height :50%;
         width: 60%;
       }
       
       
       .main {
         background-color: lightcyan;
-        padding: 2% 2%;
         height :50%;
         width: 60%;
       }
     
       .footer{
-        padding: 5px 5px;
         background-color: lightcyan;
         font-size :10%;
         height :20%;
