@@ -13,11 +13,44 @@
   
   .main {
     background-color: lightcyan;
-    padding: 70px 50px;
-    height :400px;
+    padding :70px 50px;
+    height:500px;
   }
 
   .footer{
     padding: 50px 50px;
     background-color: lightcyan;
+  }
+
+
+  @media all and (max-width: 480px) {
+    body {
+      -webkit-text-size-adjust: 100%;
+      }
+
+    .header {
+      background-color: #0d6adb;
+      color: hsl(0, 0%, 100%);
+      height: 100%;
+      width :100%;
+    }
+    
+    .header-logo {
+        float: left;
+        height :100%;
+        width: 100%;
+      }
+      
+      
+      .main {
+        background-color: lightcyan;
+        height :100%;
+        width: 100%;
+      }
+    
+      .footer{
+        background-color: lightcyan;
+        height :100%;
+        width: 100%;
+      }
   }
