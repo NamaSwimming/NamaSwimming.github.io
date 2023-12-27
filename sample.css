@@ -1,7 +1,7 @@
 .header {
   background-color: #0d6adb;
   color: #fff;
-  height: 80px;
+  height: 200px;
 }
 
 .header-logo {
@@ -13,13 +13,12 @@
   
   .main {
     background-color: lightcyan;
-    font-size :15px;
-    height :450px;
+    height :500px;
   }
 
   .footer{
     background-color: lightcyan;
-    height :100px;
+    height :250px;
   }
 
   @media all and (max-width: 480px) {
@@ -30,28 +29,26 @@
     .header {
       background-color: #0d6adb;
       color: hsl(0, 0%, 100%);
-      font-size :15%;
-      height: 30%;
+      height: 100%;
+      width :100%;
     }
     
     .header-logo {
         float: left;
-        font-size: 30%;
-        height :50%;
-        width: 60%;
+        height :100%;
+        width: 100%;
       }
       
       
       .main {
         background-color: lightcyan;
-        height :50%;
-        width: 60%;
+        height :100%;
+        width: 100%;
       }
     
       .footer{
         background-color: lightcyan;
-        font-size :10%;
-        height :20%;
-        width: 60%;
+        height :100%;
+        width: 100%;
       }
   }
