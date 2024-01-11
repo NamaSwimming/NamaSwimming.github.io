@@ -2,13 +2,12 @@
   .header {
     background-color: #0d6adb;
     color: black;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Added to stack elements vertically */
-    height: 150%; /* Increased height to 1.5 times */
   }
 
   .header-logo {
@@ -22,19 +21,17 @@
 
   .main {
     background-color: lightcyan;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
-    height: 150%; /* Increased height to 1.5 times */
   }
 
   .footer {
     background-color: lightcyan;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     width: 100%;
     padding: 50px 50px;
-    height: 150%; /* Increased height to 1.5 times */
   }
 
 
@@ -48,13 +45,12 @@
   .header {
     background-color: #0d6adb;
     color: black;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Added to stack elements vertically */
-    height: 150%; /* Increased height to 1.5 times */
   }
 
   .header-logo {
@@ -68,19 +64,17 @@
 
   .main {
     background-color: lightcyan;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
-    height: 150%; /* Increased height to 1.5 times */
   }
 
   .footer {
     background-color: lightcyan;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     width: 100%;
     padding: 50px 50px;
-    height: 150%; /* Increased height to 1.5 times */
   }
 }
 
@@ -93,13 +87,12 @@
   .header {
     background-color: #0d6adb;
     color: black;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Added to stack elements vertically */
-    height: 150%; /* Increased height to 1.5 times */
   }
 
   .header-logo {
@@ -114,18 +107,16 @@
 
   .main {
     background-color: lightcyan;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
-    height: 150%; /* Increased height to 1.5 times */
   }
 
   .footer {
     background-color: lightcyan;
-    height: auto; /* Adjusted height to fit content */
+    height: 150%; /* Increased height to 1.5 times */
     width: 100%;
     padding: 50px 50px;
-    height: 150%; /* Increased height to 1.5 times */
   }
 }
