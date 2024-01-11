@@ -21,7 +21,7 @@
   background-color: lightcyan;
 }
 
-@media all and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     -webkit-text-size-adjust: 100%;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@media all and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   body {
     -webkit-text-size-adjust: 100%;
   }
@@ -87,5 +87,35 @@
     height: 100vh;
     width: 100%;
     padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .header {
+    background-color: #0d6adb;
+    color: black;
+    height: 80px; /* Decreased height for better visibility on desktop */
+    width: 100%;
+  }
+
+  .header-logo {
+    float: left;
+    font-size: 40px;
+    padding: 10px 30px;
+  }
+
+  .main {
+    background-color: lightcyan;
+    padding: 70px 50px;
+    height: 400px; /* Decreased height for better visibility on desktop */
+  }
+
+  .footer {
+    padding: 50px 50px;
+    background-color: lightcyan;
   }
 }
