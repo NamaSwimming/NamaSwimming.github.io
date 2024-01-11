@@ -1,116 +1,87 @@
-/*パソコン用のCSS*/
+/*青を基調としたデザインにしたい．//*/
+/* ここからは，ヘッダーのデザインに関する記述 */
 .header {
-  background-color: #0d6adb;
-  color: black;
-  height: 100vh; /* Set height to 100% of viewport height */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* Added to stack elements vertically */
+  background-color: #0a2576;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
 }
-
-
+/* ここまでが，ヘッダーのデザインに関する記述 */
+/* ここからは，メインコンテンツのデザインに関する記述 */
 .main {
-  background-color: lightcyan;
-  height: calc(100vh - 120px); /* Set height to 100% of viewport height minus 120px */
-  font-size: 80%;
-  width: 100%;
-  padding: 70px 50px;
-  overflow-y: auto; /* Add vertical scroll if content exceeds height */
+  background-color: #a9dff8;
+  color: #0b0472;
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
 }
-
+/* ここまでが，メインコンテンツのデザインに関する記述 */
+/* ここからは，フッターのデザインに関する記述 */
 .footer {
-  background-color: lightcyan;
-  height: 120px; /* Set fixed height to 120px */
-  width: 100%;
-  padding: 50px 50px;
+  background-color: #a9dff8;
+  color: #6a20e1;
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+/* ここまでが，フッターのデザインに関する記述 */
 
-
-/*タブレット用のCSS*/
+.footer-logo {
+  background-color: #a9dff8;
+  color: #6a20e1;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* ここからは，リンクのデザインに関する記述 */
+a {
+  color: #6a20e1;
+  text-decoration: none;
+}
+/* ここまでが，リンクのデザインに関する記述 */
+/*タブレット設定 */
 @media screen and (max-width: 768px) {
   body {
     -webkit-text-size-adjust: 100%;
   }
-
   .header {
-    background-color: #0d6adb;
-    color: black;
-    height: 150%; /* Increased height to 1.5 times */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Added to stack elements vertically */
+    font-size: 20px;
   }
-
-  .header-logo {
-    float: none;
-    height: auto; /* Adjusted height to fit content */
-    font-size: 100%;
-    width: 100%;
-    padding: 10px 30px;
-    text-align: center; /* Centered the logo */
-  }
-
   .main {
-    background-color: lightcyan;
-    height: 100vh; /* Set height to 100% of viewport height */
-    font-size: 80%;
-    width: 100%;
-    padding: 70px 50px;
-    overflow-y: hidden; /* Hide vertical scroll */
+    font-size: 20px;
   }
-
   .footer {
-    background-color: lightcyan;
-    height: 120px; /* Set fixed height to 120px */
-    width: 100%;
-    padding: 50px 50px;
+    font-size: 20px;
+  }
+  .footer-logo {
+    font-size: 20px;
   }
 }
 
-/*スマホ用のCSS*/
+/*スマホ設定 */
 @media screen and (max-width: 480px) {
   body {
     -webkit-text-size-adjust: 100%;
   }
-
   .header {
-    background-color: #0d6adb;
-    color: black;
-    height: 150%; /* Increased height to 1.5 times */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Added to stack elements vertically */
+    font-size: 20px;
   }
-
-  .header-logo {
-    float: none;
-    height: auto; /* Adjusted height to fit content */
-    font-size: 45%;
-    width: 100%;
-    padding: 10px 30px;
-    white-space: nowrap;
-    text-align: center; /* Centered the logo */
-  }
-
   .main {
-    background-color: lightcyan;
-    height: 100vh; /* Set height to 100% of viewport height */
-    font-size: 80%;
-    width: 100%;
-    padding: 70px 50px;
-    overflow-y: hidden; /* Hide vertical scroll */
+    font-size: 20px;
   }
-
   .footer {
-    background-color: lightcyan;
-    height: 120px; /* Set fixed height to 120px */
-    width: 100%;
-    padding: 50px 50px;
+    font-size: 20px;
+  }
+  .footer-logo {
+    font-size: 20px;
   }
 }
