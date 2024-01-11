@@ -6,7 +6,7 @@
 
 .header-logo {
   float: left;
-  font-size: 40px;
+  font-size: 30px;
   padding: 10px 30px;
 }
 
@@ -30,7 +30,7 @@
     background-color: #0d6adb;
     color: black;
     height: 50vh; /* Decreased height for better visibility on mobile */
-    width: 100%;
+    width: 140%;
     display: flex; /* Added */
     justify-content: center; /* Added */
     align-items: center; /* Added */
@@ -39,25 +39,25 @@
   .header-logo {
     float: none;
     height: 100%;
-    font-size: 80%;
-    width: 100%;
+    font-size: 70%;
+    width: 140%;
     padding: 10px 30px; /* Added padding for better visibility on mobile */
     white-space: nowrap; /* Added to display in a single line */
   }
 
   .main {
     background-color: lightcyan;
-    height: 50vh; /* Decreased height for better visibility on mobile */
+    height: 30vh; /* Decreased height for better visibility on mobile */
     font-size: 80%;
-    width: 100%;
+    width: 90%; /* Decreased width for a more compact layout */
   }
 
   .footer {
     background-color: lightcyan;
-    height: 50vh; /* Decreased height for better visibility on mobile */
-    width: 100%;
+    height: 30vh; /* Decreased height for better visibility on mobile */
+    width: 90%; /* Decreased width for a more compact layout */
   }
-}
+  }
 
 @media screen and (max-width: 768px) {
   body {
