@@ -39,7 +39,7 @@
   .header-logo {
     float: none;
     height: 100%;
-    font-size: 70%;
+    font-size: 45%;
     width: 160%;
     padding: 10px 30px; /* Added padding for better visibility on mobile */
     white-space: nowrap; /* Added to display in a single line */
@@ -47,15 +47,15 @@
 
   .main {
     background-color: lightcyan;
-    height: 20vh; /* Decreased height for better visibility on mobile */
+    height: 5vh; /* Decreased height for better visibility on mobile */
     font-size: 80%;
-    width: 80%; /* Decreased width for a more compact layout */
+    width: 60%; /* Decreased width for a more compact layout */
   }
 
   .footer {
     background-color: lightcyan;
-    height: 20vh; /* Decreased height for better visibility on mobile */
-    width: 80%; /* Decreased width for a more compact layout */
+    height: 2vh; /* Decreased height for better visibility on mobile */
+    width: 60%; /* Decreased width for a more compact layout */
   }
   }
 
