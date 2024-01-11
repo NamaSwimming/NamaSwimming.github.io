@@ -1,64 +1,42 @@
-.header {
-  background-color: #0d6adb;
-  color: #fff;
-  height: 80px;
-}
-
-.header-logo {
-  float: left;
-  font-size: 30px;
-  padding: 10px 30px;
-}
-
-.main {
-  background-color: lightcyan;
-  padding: 70px 50px;
-  height: 400px;
-}
-
-.footer {
-  padding: 50px 50px;
-  background-color: lightcyan;
-}
-
-@media screen and (max-width: 480px) {
-  body {
-    -webkit-text-size-adjust: 100%;
-  }
-
+/*パソコン用のCSS*/
   .header {
     background-color: #0d6adb;
     color: black;
-    height: 50vh; /* Decreased height for better visibility on mobile */
-    width: 160%;
-    display: flex; /* Added */
-    justify-content: center; /* Added */
-    align-items: center; /* Added */
+    height: auto; /* Adjusted height to fit content */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack elements vertically */
   }
 
   .header-logo {
     float: none;
-    height: 100%;
-    font-size: 45%;
-    width: 160%;
-    padding: 10px 30px; /* Added padding for better visibility on mobile */
-    white-space: nowrap; /* Added to display in a single line */
+    height: auto; /* Adjusted height to fit content */
+    font-size: 100%;
+    width: 100%;
+    padding: 10px 30px;
+    text-align: center; /* Centered the logo */
   }
 
   .main {
     background-color: lightcyan;
-    height: 5vh; /* Decreased height for better visibility on mobile */
+    height: auto; /* Adjusted height to fit content */
     font-size: 80%;
-    width: 60%; /* Decreased width for a more compact layout */
+    width: 100%;
+    padding: 70px 50px;
   }
 
   .footer {
     background-color: lightcyan;
-    height: 2vh; /* Decreased height for better visibility on mobile */
-    width: 60%; /* Decreased width for a more compact layout */
-  }
+    height: auto; /* Adjusted height to fit content */
+    width: 100%;
+    padding: 50px 50px;
   }
 
+
+
+/*タブレット用のCSS*/
 @media screen and (max-width: 768px) {
   body {
     -webkit-text-size-adjust: 100%;
@@ -67,21 +45,26 @@
   .header {
     background-color: #0d6adb;
     color: black;
-    height: 100vh;
+    height: auto; /* Adjusted height to fit content */
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack elements vertically */
   }
 
   .header-logo {
     float: none;
-    height: 100%;
+    height: auto; /* Adjusted height to fit content */
     font-size: 100%;
     width: 100%;
     padding: 10px 30px;
+    text-align: center; /* Centered the logo */
   }
 
   .main {
     background-color: lightcyan;
-    height: 100vh;
+    height: auto; /* Adjusted height to fit content */
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
@@ -89,13 +72,14 @@
 
   .footer {
     background-color: lightcyan;
-    height: 100vh;
+    height: auto; /* Adjusted height to fit content */
     width: 100%;
     padding: 50px 50px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+/*スマホ用のCSS*/
+@media screen and (max-width: 480px) {
   body {
     -webkit-text-size-adjust: 100%;
   }
@@ -103,24 +87,36 @@
   .header {
     background-color: #0d6adb;
     color: black;
-    height: 80px; /* Decreased height for better visibility on desktop */
+    height: auto; /* Adjusted height to fit content */
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack elements vertically */
   }
 
   .header-logo {
-    float: left;
-    font-size: 40px;
+    float: none;
+    height: auto; /* Adjusted height to fit content */
+    font-size: 45%;
+    width: 100%;
     padding: 10px 30px;
+    white-space: nowrap;
+    text-align: center; /* Centered the logo */
   }
 
   .main {
     background-color: lightcyan;
+    height: auto; /* Adjusted height to fit content */
+    font-size: 80%;
+    width: 100%;
     padding: 70px 50px;
-    height: 400px; /* Decreased height for better visibility on desktop */
   }
 
   .footer {
-    padding: 50px 50px;
     background-color: lightcyan;
+    height: auto; /* Adjusted height to fit content */
+    width: 100%;
+    padding: 50px 50px;
   }
 }
