@@ -1,39 +1,31 @@
 /*パソコン用のCSS*/
-  .header {
-    background-color: #0d6adb;
-    color: black;
-    height: 150%; /* Increased height to 1.5 times */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Added to stack elements vertically */
-  }
+.header {
+  background-color: #0d6adb;
+  color: black;
+  height: 100vh; /* Set height to 100% of viewport height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Added to stack elements vertically */
+}
 
-  .header-logo {
-    float: none;
-    height: auto; /* Adjusted height to fit content */
-    font-size: 100%;
-    width: 100%;
-    padding: 10px 30px;
-    text-align: center; /* Centered the logo */
-  }
 
-  .main {
-    background-color: lightcyan;
-    height: 150%; /* Increased height to 1.5 times */
-    font-size: 80%;
-    width: 100%;
-    padding: 70px 50px;
-  }
+.main {
+  background-color: lightcyan;
+  height: calc(100vh - 120px); /* Set height to 100% of viewport height minus 120px */
+  font-size: 80%;
+  width: 100%;
+  padding: 70px 50px;
+  overflow-y: auto; /* Add vertical scroll if content exceeds height */
+}
 
-  .footer {
-    background-color: lightcyan;
-    height: 150%; /* Increased height to 1.5 times */
-    width: 100%;
-    padding: 50px 50px;
-  }
-
+.footer {
+  background-color: lightcyan;
+  height: 120px; /* Set fixed height to 120px */
+  width: 100%;
+  padding: 50px 50px;
+}
 
 
 /*タブレット用のCSS*/
@@ -64,15 +56,16 @@
 
   .main {
     background-color: lightcyan;
-    height: 150%; /* Increased height to 1.5 times */
+    height: 100vh; /* Set height to 100% of viewport height */
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
+    overflow-y: hidden; /* Hide vertical scroll */
   }
 
   .footer {
     background-color: lightcyan;
-    height: 150%; /* Increased height to 1.5 times */
+    height: 120px; /* Set fixed height to 120px */
     width: 100%;
     padding: 50px 50px;
   }
@@ -107,15 +100,16 @@
 
   .main {
     background-color: lightcyan;
-    height: 150%; /* Increased height to 1.5 times */
+    height: 100vh; /* Set height to 100% of viewport height */
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
+    overflow-y: hidden; /* Hide vertical scroll */
   }
 
   .footer {
     background-color: lightcyan;
-    height: 150%; /* Increased height to 1.5 times */
+    height: 120px; /* Set fixed height to 120px */
     width: 100%;
     padding: 50px 50px;
   }
