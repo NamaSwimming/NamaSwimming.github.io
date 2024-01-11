@@ -31,13 +31,18 @@
     color: black;
     height: 50vh; /* Decreased height for better visibility on mobile */
     width: 100%;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
   }
 
   .header-logo {
     float: none;
     height: 100%;
-    font-size: 100%;
+    font-size: 80%;
     width: 100%;
+    padding: 10px 30px; /* Added padding for better visibility on mobile */
+    white-space: nowrap; /* Added to display in a single line */
   }
 
   .main {
