@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Added to stack elements vertically */
+    height: 150%; /* Increased height to 1.5 times */
   }
 
   .header-logo {
@@ -25,6 +26,7 @@
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
+    height: 150%; /* Increased height to 1.5 times */
   }
 
   .footer {
@@ -32,6 +34,7 @@
     height: auto; /* Adjusted height to fit content */
     width: 100%;
     padding: 50px 50px;
+    height: 150%; /* Increased height to 1.5 times */
   }
 
 
@@ -51,6 +54,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Added to stack elements vertically */
+    height: 150%; /* Increased height to 1.5 times */
   }
 
   .header-logo {
@@ -68,6 +72,7 @@
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
+    height: 150%; /* Increased height to 1.5 times */
   }
 
   .footer {
@@ -75,6 +80,7 @@
     height: auto; /* Adjusted height to fit content */
     width: 100%;
     padding: 50px 50px;
+    height: 150%; /* Increased height to 1.5 times */
   }
 }
 
@@ -93,6 +99,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Added to stack elements vertically */
+    height: 150%; /* Increased height to 1.5 times */
   }
 
   .header-logo {
@@ -111,6 +118,7 @@
     font-size: 80%;
     width: 100%;
     padding: 70px 50px;
+    height: 150%; /* Increased height to 1.5 times */
   }
 
   .footer {
@@ -118,5 +126,6 @@
     height: auto; /* Adjusted height to fit content */
     width: 100%;
     padding: 50px 50px;
+    height: 150%; /* Increased height to 1.5 times */
   }
 }
