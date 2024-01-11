@@ -30,7 +30,7 @@
     background-color: #0d6adb;
     color: black;
     height: 50vh; /* Decreased height for better visibility on mobile */
-    width: 140%;
+    width: 160%;
     display: flex; /* Added */
     justify-content: center; /* Added */
     align-items: center; /* Added */
@@ -40,22 +40,22 @@
     float: none;
     height: 100%;
     font-size: 70%;
-    width: 140%;
+    width: 160%;
     padding: 10px 30px; /* Added padding for better visibility on mobile */
     white-space: nowrap; /* Added to display in a single line */
   }
 
   .main {
     background-color: lightcyan;
-    height: 30vh; /* Decreased height for better visibility on mobile */
+    height: 20vh; /* Decreased height for better visibility on mobile */
     font-size: 80%;
-    width: 90%; /* Decreased width for a more compact layout */
+    width: 80%; /* Decreased width for a more compact layout */
   }
 
   .footer {
     background-color: lightcyan;
-    height: 30vh; /* Decreased height for better visibility on mobile */
-    width: 90%; /* Decreased width for a more compact layout */
+    height: 20vh; /* Decreased height for better visibility on mobile */
+    width: 80%; /* Decreased width for a more compact layout */
   }
   }
 
