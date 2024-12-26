@@ -44,16 +44,18 @@ body {
   padding: 10px;
 }
 
+/* リンクにのみ下線を引くようにする */
 a {
   color: #e40ce0; /* ブルーバイオレット */
-  text-decoration: none;
+  text-decoration: underline; /* ← ここをunderlineに */
 }
 
 a:hover {
   color: #ff4500; /* オレンジレッド */
+  /* 下線は引きっぱなしにしたい場合は指定不要 */
 }
 
-/* タブレット設定 */
+/* タブレット設定 (幅481px～1024px) */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .header-logo {
       font-size: 36px;
@@ -63,7 +65,7 @@ a:hover {
   }
 }
 
-/* スマホ設定 */
+/* スマホ設定 (幅480px以下) */
 @media screen and (max-width: 480px) {
   .header-logo {
       font-size: 28px;
