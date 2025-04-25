@@ -1,3 +1,8 @@
+/* ① 全要素を border-box に */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* ベーススタイル（PC用） */
 body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
@@ -7,70 +12,77 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+/* ② ページ全体を包むコンテナ */
+.container {
+  max-width: 1200px;    /* お好みの最大幅に調整 */
+  margin: 0 auto;       /* 中央寄せ */
+  padding: 0 20px;      /* 左右に余白 */
+}
+
+/* ヘッダー・メイン・フッター共通で .container を内包 */
 .header {
-  background-color: #5841ea; /* スレートブルー */
+  background-color: #5841ea;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
 .header-logo {
-  font-size: 48px; /* 見出しを大きく */
+  font-size: 48px;
   font-weight: bold;
 }
 
 .main {
-  margin: 20px;
+  margin: 20px 0;
   color: #333;
   font-size: 20px;
 }
 
 .main h1 {
-  color: #d31515; /* ダークレッド */
+  color: #d31515;
 }
 
 .main h2 {
-  color: #0000cd; /* ミディアムブルー */
+  color: #0000cd;
 }
 
 .main h3 {
-  color: #bf1ee7; /* ダークスレートブルー */
+  color: #bf1ee7;
 }
 
 .footer {
-  background-color: #5841ea; /* スレートブルー */
+  background-color: #5841ea;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 
-/* リンクにのみ下線を引くようにする */
+/* リンクにのみ下線 */
 a {
-  color: #e40ce0; /* ブルーバイオレット */
-  text-decoration: underline; /* ← ここをunderlineに */
+  color: #e40ce0;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #ff4500; /* オレンジレッド */
-  /* 下線は引きっぱなしにしたい場合は指定不要 */
+  color: #ff4500;
 }
 
-/* タブレット設定 (幅481px～1024px) */
+/* タブレット設定 */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .header-logo {
-      font-size: 36px;
+    font-size: 36px;
   }
   .main {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
-/* スマホ設定 (幅480px以下) */
+/* スマホ設定 */
 @media screen and (max-width: 480px) {
   .header-logo {
-      font-size: 28px;
+    font-size: 28px;
   }
   .main {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
