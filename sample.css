@@ -17,7 +17,7 @@ body {
   background-color: #5841ea;
   color: white;
   text-align: center;
-  padding: 40px 0;
+  padding: 45px 0;
 }
 
 /* ヘッダー内タイトルを大きく＆太字に */
@@ -83,9 +83,10 @@ body {
   background-color: #5841ea;
   color: white;
   text-align: center; /* ←Twitterリンクだけ中央 */
-  padding: 40px 0;
+  padding: 45px 0;
 }
 .footer a {
   color: #e40ce0;
   text-decoration: none;
+  font-size: 1.4em;
 }
