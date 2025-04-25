@@ -76,18 +76,20 @@ body {
   font-size: 0.9em;
   margin: 0.5em 0;
 }
-
-/* フッター */
+/* フッター全体のフォントサイズを1.5emに */
 .footer {
   width: 100%;
   background-color: #5841ea;
   color: white;
   text-align: center; /* ←Twitterリンクだけ中央 */
   padding: 48px 0;
-  font-size:1.5em ;
+  font-size: 1.7em;
 }
+
+/* aタグは親から継承するだけにする */
 .footer a {
   color: #e40ce0;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: inherit; /* ←ここをinheritに */
 }
+
