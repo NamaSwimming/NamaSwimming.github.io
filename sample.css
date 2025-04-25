@@ -17,8 +17,15 @@ body {
   background-color: #5841ea;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
+
+/* ヘッダー内タイトルを大きく＆太字に */
+.header-logo {
+  font-size: 2.8rem;   /* お好みで 1.8–2.5rem 程度に調整 */
+  font-weight: 700;    /* 太字（数字はお好みで。bold でも可） */
+}
+
 
 /* メインコンテンツ */
 .main {
@@ -28,6 +35,12 @@ body {
   color: #333;
   font-size: 20px;
 }
+
+/* ── 本文だけを 0.5em 右へ寄せる ── */
+.main {
+  padding-left: 1em;   /* ≈ 半角スペース 1 個 */
+}
+
 
 /* 解答集リンク・ポートフォリオリンクも h2 のまま */
 .main h2 {
@@ -70,7 +83,7 @@ body {
   background-color: #5841ea;
   color: white;
   text-align: center; /* ←Twitterリンクだけ中央 */
-  padding: 10px 0;
+  padding: 40px 0;
 }
 .footer a {
   color: #e40ce0;
