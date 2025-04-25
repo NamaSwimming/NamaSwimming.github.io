@@ -1,88 +1,78 @@
-/* ① 全要素を border-box に */
-*, *::before, *::after {
+/* リセットして余白を完全に削除 */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* ベーススタイル（PC用） */
+/* ボディ背景とフォントだけ指定 */
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-/* ② ページ全体を包むコンテナ */
-.container {
-  max-width: 1200px;    /* お好みの最大幅に調整 */
-  margin: 0 auto;       /* 中央寄せ */
-  padding: 0 20px;      /* 左右に余白 */
-}
-
-/* ヘッダー・メイン・フッター共通で .container を内包 */
+/* ヘッダー */
 .header {
+  width: 100%;
   background-color: #5841ea;
   color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 20px 0;
 }
 
-.header-logo {
-  font-size: 48px;
-  font-weight: bold;
-}
-
+/* メインコンテンツ */
 .main {
-  margin: 20px 0;
+  width: 100%;
+  text-align: left;   /* ←本文を左寄せ */
+  padding: 20px 0;    /* 上下だけ適度に余白 */
   color: #333;
   font-size: 20px;
 }
 
-.main h1 {
-  color: #d31515;
-}
-
+/* 解答集リンク・ポートフォリオリンクも h2 のまま */
 .main h2 {
-  color: #0000cd;
+  font-size: 1.5em;
+  margin: 0.5em 0;
 }
-
-.main h3 {
-  color: #bf1ee7;
-}
-
-.footer {
-  background-color: #5841ea;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* リンクにのみ下線 */
-a {
+.main h2 a {
   color: #e40ce0;
   text-decoration: underline;
 }
 
-a:hover {
-  color: #ff4500;
+/* リストのインデント */
+.main ul {
+  list-style: disc;
+  margin-left: 1.5em;
 }
 
-/* タブレット設定 */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .header-logo {
-    font-size: 36px;
-  }
-  .main {
-    font-size: 18px;
-  }
+/* 小見出し */
+.main h3 {
+  color: #bf1ee7;
+  margin-bottom: 0.5em;
 }
 
-/* スマホ設定 */
-@media screen and (max-width: 480px) {
-  .header-logo {
-    font-size: 28px;
-  }
-  .main {
-    font-size: 16px;
-  }
+/* 大見出し */
+.main h1 {
+  color: #d31515;
+  margin: 0.8em 0;
+}
+
+/* 注意書き */
+.main h4 {
+  color: #333;
+  font-size: 0.9em;
+  margin: 0.5em 0;
+}
+
+/* フッター */
+.footer {
+  width: 100%;
+  background-color: #5841ea;
+  color: white;
+  text-align: center; /* ←Twitterリンクだけ中央 */
+  padding: 10px 0;
+}
+.footer a {
+  color: #e40ce0;
+  text-decoration: none;
 }
