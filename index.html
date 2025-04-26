@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="なまちゃんが作った数学の資料を載せております．">
+  <meta name="description" content="なまちゃんが作った数学の資料を掲載しています。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sample.css">
   <title>なまちゃんの資料置き場</title>
@@ -10,46 +10,63 @@
 <body>
 
   <header class="header">
-    <div class="header-logo">なまちゃんの資料置き場</div>
+    <h1 class="header-logo">なまちゃんの資料置き場</h1>
   </header>
 
-  <main class="main">
-    <h3>ここは茨城に住む一数学徒・なまちゃんが作成した数学の資料を掲載する場所です．</h3>
-    <h3>なまちゃんとのコンタクトはTwitterにて．</h3>
+  <main class="main container">
 
-    <h1><a href="https://note.com/math_namachan">なまちゃん-note-</a></h1>
-    <h1>解答集・一覧</h1>
+    <!-- 自己紹介 -->
+    <section>
+      <p class="intro">
+        茨城に住む一数学徒・<strong>なまちゃん</strong> が作成した数学関連の資料を公開しています．
+        ご連絡は&nbsp;<a href="https://twitter.com/math_namachan" aria-label="Twitter で @math_namachan に連絡" target="_blank">@math_namachan</a>&nbsp;まで．
+      </p>
+    </section>
 
-    <ul>
-      <li>
-        <h2>
-          <a href="https://github.com/namaswimming/sugiura_kaiseki_kaitou/blob/main/sugiura_kaiseki_kaitou.pdf" target="_blank">
-            杉浦光夫・解析入門解答集
+    <!-- note へのリンク -->
+    <section>
+      <h2 class="section-title">
+        <a href="https://note.com/math_namachan" target="_blank" rel="noopener">note での記事一覧</a>
+      </h2>
+    </section>
+
+    <!-- 解答集リスト -->
+    <section>
+      <h2 class="section-title">解答集</h2>
+      <ul class="materials">
+        <li>
+          <a href="https://github.com/namaswimming/sugiura_kaiseki_kaitou/blob/main/sugiura_kaiseki_kaitou.pdf"
+             target="_blank" rel="noopener">
+            杉浦光夫『解析入門』解答集
           </a>
-        </h2>
-      </li>
-      <li>
-        <h2>
-          <a href="https://github.com/namaswimming/saito_senkei_kaitou/blob/main/saito_senkei_kaitou.pdf" target="_blank">
-            齋藤正彦・線型代数入門解答集
+        </li>
+        <li>
+          <a href="https://github.com/namaswimming/saito_senkei_kaitou/blob/main/saito_senkei_kaitou.pdf"
+             target="_blank" rel="noopener">
+            齋藤正彦『線型代数入門』解答集
           </a>
-        </h2>
-      </li>
-    </ul>
+        </li>
+      </ul>
+      <p class="note">※著作権の関係上，問題文は掲載していません．</p>
+    </section>
 
-    <h4>※著作権の関係上，問題文は掲載しておりません．</h4>
-
-    <!-- ここにポートフォリオへのリンクを追加 -->
-    <h2>
-      <a href="portfolio_namachan.pdf" target="_blank">
-        ポートフォリオ created with LaTeX
+    <!-- ポートフォリオ -->
+    <section>
+      <a class="portfolio-link" href="portfolio_namachan.pdf" target="_blank" download>
+        ポートフォリオ&nbsp;(PDF)&nbsp;— created&nbsp;with&nbsp;LaTeX
       </a>
-    </h2>
+    </section>
 
   </main>
 
   <footer class="footer">
-    <h3>Twitter : <a href="https://twitter.com/math_namachan">@math_namachan</a></h3>
+    <p>© 2025&nbsp;Namachan</p>
+    <p>
+      Twitter&nbsp;:&nbsp;
+      <a href="https://twitter.com/math_namachan" aria-label="Twitter で @math_namachan に移動" target="_blank">
+        @math_namachan
+      </a>
+    </p>
   </footer>
 
 </body>
