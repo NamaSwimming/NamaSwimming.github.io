@@ -1,95 +1,81 @@
-/* リセットして余白を完全に削除 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== リセット ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* ボディ背景とフォントだけ指定 */
-body {
-  background-color: #f5f5f5;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+/* ===== ベース設定 ===== */
+:root{
+  /* ここを 12px～16px の範囲で変えるだけで全体の大きさを一括調整 */
+  font-size:14px;      /* 小さめに統一               */
 }
 
-/* ヘッダー */
-.header {
-  width: 100%;
-  background-color: #5841ea;
-  color: white;
-  text-align: center;
-  padding: 48px 0;
+body{
+  background:#fff;     /* 白背景                     */
+  color:#000;          /* 黒字                       */
+  font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN",
+              "Hiragino Sans",Meiryo,sans-serif;
 }
 
-/* ヘッダー内タイトルを大きく＆太字に */
-.header-logo {
-  font-size: 3.0rem;   /* お好みで 1.8–2.5rem 程度に調整 */
-  font-weight: 700;    /* 太字（数字はお好みで。bold でも可） */
+/* ===== ヘッダー ===== */
+.header{
+  width:100%;
+  background:#000;     /* 黒背景                     */
+  color:#fff;          /* 白字                       */
+  text-align:center;
+  padding:32px 0;      /* 少し浅めの余白             */
 }
 
-
-/* メインコンテンツ */
-.main {
-  width: 100%;
-  text-align: left;   /* ←本文を左寄せ */
-  padding: 20px 0;    /* 上下だけ適度に余白 */
-  color: #333;
-  font-size: 20px;
+.header-logo{
+  font-size:2rem;      /* 従来 3rem → 小さめに       */
+  font-weight:700;
 }
 
-/* ── 本文だけを 0.5em 右へ寄せる ── */
-.main {
-  padding-left: 1em;   /* ≈ 半角スペース 1 個 */
+/* ===== メイン ===== */
+.main{
+  width:100%;
+  background:#fff;     /* 白背景                     */
+  color:#000;          /* 黒字                       */
+  padding:16px 1em;    /* 余白も控えめ               */
+  font-size:1rem;      /* = ルートの 1 × 14px        */
+  text-align:left;
 }
 
-
-/* 解答集リンク・ポートフォリオリンクも h2 のまま */
-.main h2 {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-.main h2 a {
-  color: #e40ce0;
-  text-decoration: underline;
+/* 見出し・本文内リンクも黒（下線だけで識別） */
+.main h1,
+.main h2,
+.main h3,
+.main h4{
+  color:#000;
 }
 
-/* リストのインデント */
-.main ul {
-  list-style: disc;
-  margin-left: 1.5em;
+.main h1,
+.main h2{ margin:0.6em 0; }
+.main h3{ margin-bottom:0.4em; }
+.main h2 a,
+.main h1 a{
+  color:inherit;       /* 黒字を継承                 */
+  text-decoration:underline;
 }
 
-/* 小見出し */
-.main h3 {
-  color: #bf1ee7;
-  margin-bottom: 0.5em;
+.main ul{
+  list-style:disc;
+  margin-left:1.5em;
 }
 
-/* 大見出し */
-.main h1 {
-  color: #d31515;
-  margin: 0.8em 0;
+/* ===== フッター ===== */
+.footer{
+  width:100%;
+  background:#000;     /* 黒背景                     */
+  color:#fff;          /* 白字                       */
+  text-align:center;
+  padding:32px 0;
+  font-size:1.1rem;    /* ヘッダーよりひと回り小さく */
 }
 
-/* 注意書き */
-.main h4 {
-  color: #333;
-  font-size: 0.9em;
-  margin: 0.5em 0;
-}
-/* フッター全体のフォントサイズを1.5emに */
-.footer {
-  width: 100%;
-  background-color: #5841ea;
-  color: white;
-  text-align: center; /* ←Twitterリンクだけ中央 */
-  padding: 48px 0;
-  font-size: 1.7em;
-}
-
-/* aタグは親から継承するだけにする */
-.footer a {
-  color: #e40ce0;
-  text-decoration: none;
-  font-size: inherit; /* ←ここをinheritに */
+.footer a{
+  color:inherit;       /* 白字を継承                 */
+  text-decoration:none;
 }
 
